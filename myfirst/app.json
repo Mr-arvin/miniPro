@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/join/join",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1eadef",
+    "navigationBarTitleText": "共享直饮水",
+    "navigationBarTextStyle":"#ffffff"
+  },
+  "tabBar": {
+    "selectedColor": "#2e5e86",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/ic_home_normal.png",
+      "selectedIconPath": "images/ic_home_pressed.png"
+    },{
+      "pagePath": "pages/join/join",
+      "text": "加入",
+      "iconPath": "images/ic_home_normal.png",
+      "selectedIconPath": "images/ic_home_pressed.png"
+    }]
+  }
+}
