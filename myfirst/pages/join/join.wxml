@@ -7,14 +7,14 @@
   </block>
 </swiper>
 <view class='items-list'>
-  <view class='pro-item'>
-    <image class='pro-logo' src='/images/pro_01.jpg'></image>
+  <view class='pro-item' wx:for="{{proList}}">
+    <image class='pro-logo' src='{{item.img}}'></image>
     <view class='pro-body'>
-      <view class='pro-title'>饮水知识</view>
-      <text>如何正确的饮水，什么是健康的水</text>
+      <view class='pro-title'>{{item.title}}</view>
+      <text class='pro-desc'>{{item.desc}}</text>
       <view class='pro-footer'>
-        <image class='btn-detail' src='/images/btn_detail.png'></image>
-        <image class='btn-ask' src='/images/btn_ask.png'></image>
+        <image class='btn-detail' src='{{item.btn_details}}'></image>
+        <image class='btn-ask' src='{{item.btn_ask}}'></image>
       </view>
     </view>
   </view>

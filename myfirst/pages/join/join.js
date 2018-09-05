@@ -10,6 +10,12 @@ Page({
       '/images/banner_02.jpg',
       '/images/banner_03.jpg'
     ],
+    proList: [
+      { title: '饮水知识', desc:'我们都需要喝水', img: '/images/pro_01.jpg', btn_details: '/images/btn_detail.png', btn_ask: '/images/btn_ask.png'},
+      { title: '饮水知识', desc: '我们都需要喝水', img: '/images/pro_02.jpg', btn_details: '/images/btn_detail.png', btn_ask: '/images/btn_ask.png' },
+      { title: '饮水知识', desc: '我们都需要喝水', img: '/images/pro_03.jpg', btn_details: '/images/btn_detail.png', btn_ask: '/images/btn_ask.png' },
+      { title: '饮水知识', desc: '我们都需要喝水', img: '/images/pro_01.jpg', btn_details: '/images/btn_detail.png', btn_ask: '/images/btn_ask.png' },
+    ],
     indicatorDots: false,
     autoplay: false,
     interval: 5000,

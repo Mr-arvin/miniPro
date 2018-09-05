@@ -14,6 +14,7 @@ swiper image {
 }
 .pro-item{
   overflow: hidden;
+  padding: 30rpx;
 }
 .pro-logo{
   float: left;
@@ -21,5 +22,32 @@ swiper image {
   height: 190rpx;
 }
 .pro-body {
-  margin-left: 200rpx;
+  position: relative;
+  margin-left: 210rpx;
+}
+.pro-title{
+  color: #212121;
+  font-size: 34rpx;
+  line-height: 1;
+}
+.pro-desc{
+  font-size: 24rpx;
+  color: #9a9a0a;
+  line-height: 1.2;
+}
+.pro-footer{
+  position: absolute;
+  overflow: hidden;
+  top: 140rpx;
+}
+.btn-detail{
+  float: left;
+  width: 170rpx;
+  height: 52rpx;
+}
+.btn-ask{
+  float: left;
+  width: 224rpx;
+  height: 52rpx;
+  margin-left: 20rpx;
 }
