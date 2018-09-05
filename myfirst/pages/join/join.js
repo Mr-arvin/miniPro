@@ -10,12 +10,7 @@ Page({
       '/images/banner_02.jpg',
       '/images/banner_03.jpg'
     ],
-    proList: [
-      { title: '饮水知识', desc:'我们都需要喝水', img: '/images/pro_01.jpg', btn_details: '/images/btn_detail.png', btn_ask: '/images/btn_ask.png'},
-      { title: '饮水知识', desc: '我们都需要喝水', img: '/images/pro_02.jpg', btn_details: '/images/btn_detail.png', btn_ask: '/images/btn_ask.png' },
-      { title: '饮水知识', desc: '我们都需要喝水', img: '/images/pro_03.jpg', btn_details: '/images/btn_detail.png', btn_ask: '/images/btn_ask.png' },
-      { title: '饮水知识', desc: '我们都需要喝水', img: '/images/pro_01.jpg', btn_details: '/images/btn_detail.png', btn_ask: '/images/btn_ask.png' },
-    ],
+    proList: null,
     indicatorDots: false,
     autoplay: false,
     interval: 5000,
@@ -49,6 +44,26 @@ Page({
   onLoad: function (options) {
     this.setData({
       test:'01',
+    })
+    this.getProList();
+  },
+  getProList: function(){
+    var self = this;
+    var data = [
+      { title: '饮水知识', desc: '我们都需要喝水', img: '/images/pro_01.jpg', btn_details: '/images/btn_detail.png', btn_ask: '/images/btn_ask.png' },
+      { title: '饮水知识', desc: '我们都需要喝水', img: '/images/pro_02.jpg', btn_details: '/images/btn_detail.png', btn_ask: '/images/btn_ask.png' },
+      { title: '饮水知识', desc: '我们都需要喝水', img: '/images/pro_03.jpg', btn_details: '/images/btn_detail.png', btn_ask: '/images/btn_ask.png' },
+      { title: '饮水知识', desc: '我们都需要喝水', img: '/images/pro_01.jpg', btn_details: '/images/btn_detail.png', btn_ask: '/images/btn_ask.png' },
+    ];
+    wx.request({
+      url: 'http://pel8cn2dx.bkt.clouddn.com/demoJson02.json',
+      method: 'GET',
+      success: function(res){
+        console.log(res.data)
+        self.setData({
+          proList: data
+        })
+      }
     })
   },
 
