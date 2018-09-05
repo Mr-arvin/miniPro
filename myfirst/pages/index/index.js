@@ -49,5 +49,10 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  tell: function(){
+    wx.makePhoneCall({
+      phoneNumber: '13260796666',
+    })
   }
 })
